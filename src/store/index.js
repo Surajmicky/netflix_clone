@@ -82,7 +82,7 @@ import {
     async (email) => {
       const {
         data: { likedMovies },
-      } = await axios.get(`http://localhost:5000/api/user/liked/${email}`);
+      } = await axios.get(`https://salmon-angelfish-toga.cyclic.app/api/user/liked/${email}`);
       console.log(email,likedMovies)
       return likedMovies;
     }
@@ -93,7 +93,7 @@ import {
     async ({ movieId, email }) => {
       const {
         data: { likedMovies },
-      } = await axios.put("http://localhost:5000/api/user/remove", {
+      } = await axios.put("https://salmon-angelfish-toga.cyclic.app/api/user/remove", {
         email,
         movieId,
       });
