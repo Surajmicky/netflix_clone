@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Checkout branch "Master" for frontend Netflix Clone with React Redux**
 
-## Available Scripts
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Quick Links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Live Site Demo](https://netflix-kappa-roan.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Tech Stack](#tech-stack)
 
-### `npm test`
+[Implementation Hightlights](#Implementation-Hightlights)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [User Stories](#user-stories)
 
-### `npm run build`
+[Getting Started](#getting-started)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Prerequisites](#prerequisites)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - [Tools & Versions](#tools-&-versions)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Serving Application](#serving-application)
+  - [Web Client](#web-client)
 
-### `npm run eject`
+[Deployment](#deployment)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Author](#author)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Acknowledgments](#acknowledgments)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Demo
 
-## Learn More
+### Live Site Demo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Demo:  [Live Site Demo](https://netflix-kappa-roan.vercel.app/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [React](https://github.com/facebook/react) ∙ [Redux](https://github.com/reduxjs/redux)
+  - web client & client data management
+- [Node.js](https://github.com/nodejs) ∙ [Expressjs](https://github.com/expressjs/express) 
+  - web server & services in service oriented architecure
+- TMDB(api)
+  - persisted database for movies
+- mongoDB
+  - persisted database for users
+- Firebase
+  - user authentication
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Implementation Highlights
 
-### Making a Progressive Web App
+- single page application web client with React & Redux
+- service oriented architecure backend
+- REST for client server communication,
+- TMDB api for movies data,
+- MongoDB for user's database,
+- Firebase for user authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### User Stories
 
-### Advanced Configuration
+- users can register and log in to their account
+- landing page has collections of movie for recommendations
+- users can search for movies
+- users can browse search result by pages
+- users can select and view details of a movie
+- users can play a movie(sample video added)
+- users can add or remove movie to his/her wish list
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Getting Started
 
-### Deployment
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Tools & Versions
 
-### `npm run build` fails to minify
+| Tools         |
+| ------------- | 
+| npm           | 
+| nodejs        |
+| mongoDB       |
+| react-js      |
+|redux          |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+- install dependencies
+
+```terminal
+npm install 
+``` 
+
+
+
+### Serving Application
+
+#### Movie Service
+
+- dependent on TMDB API as data source
+
+
+#### Web Client
+
+- install dependencies & start application
+
+```terminal
+npm install
+npm start
+```
+
+Application will be serving on http://localhost:3000
+
+---
+
+## Deployment
+
+-  [Live Site Demo](https://netflix-kappa-roan.vercel.app/)
+
+---
+
+## Author
+
+- Suraj Kumar
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+---
+
