@@ -8,7 +8,7 @@ import { BiChevronDown } from "react-icons/bi";
 import { BsCheck } from "react-icons/bs";
 import axios from "axios";
 import { onAuthStateChanged } from "firebase/auth";
-import { firebaseAuth } from "../utils/firebase-config";
+import { firebaseAuth } from "../utils/firebase.config";
 import { useDispatch } from "react-redux";
 import { removeMovieFromLiked } from "../store";
 import video from "../assets/video.mp4";
@@ -27,10 +27,12 @@ export default React.memo(function Card({ index, movieData, isLiked = false }) {
 
   const addToList = async () => {
     try {
+      console.log('hello')
       await axios.post("http://localhost:5000/api/user/add", {
         email,
         data: movieData,
       });
+      console.log('adding')
     } catch (error) {
       console.log(error);
     }

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import BackgroundImage from "../components/BackgroundImage";
 import Header from "../components/Header";
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
-import { firebaseAuth } from "../utils/firebase-config";
+import { firebaseAuth } from "../utils/firebase.config";
 
 function Login() {
   const [email, setEmail] = useState("");
